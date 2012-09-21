@@ -4,7 +4,7 @@
   <title><![CDATA[Frank_Xu的学习笔记]]></title>
   <link href="http://frankyxhl.github.com/atom.xml" rel="self"/>
   <link href="http://frankyxhl.github.com/"/>
-  <updated>2012-09-21T16:48:07+08:00</updated>
+  <updated>2012-09-21T17:01:52+08:00</updated>
   <id>http://frankyxhl.github.com/</id>
   <author>
     <name><![CDATA[Frank_Xu]]></name>
@@ -18,11 +18,26 @@
     <link href="http://frankyxhl.github.com/blog/2012/09/21/new-post/"/>
     <updated>2012-09-21T16:43:00+08:00</updated>
     <id>http://frankyxhl.github.com/blog/2012/09/21/new-post</id>
-    <content type="html"><![CDATA[<h1>这是 H1</h1>
+    <content type="html"><![CDATA[<h1>Dillinger</h1>
 
-<h2>这是 H2</h2>
+<p>Dillinger is a cloud-enabled HTML5 Markdown editor.</p>
 
-<h6>这是 H6</h6>
+<ul>
+<li>Type some Markdown text in the left window</li>
+<li>See the HTML in the right</li>
+<li>Magic</li>
+</ul>
+
+
+<p>Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site] [1]:</p>
+
+<blockquote><p>The overriding design goal for Markdown&#8217;s
+formatting syntax is to make it as readable
+as possible. The idea is that a
+Markdown-formatted document should be
+publishable as-is, as plain text, without
+looking like it&#8217;s been marked up with tags
+or formatting instructions.</p></blockquote>
 ]]></content>
   </entry>
   
