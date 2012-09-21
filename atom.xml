@@ -4,7 +4,7 @@
   <title><![CDATA[Frank_Xu的学习笔记]]></title>
   <link href="http://frankyxhl.github.com/atom.xml" rel="self"/>
   <link href="http://frankyxhl.github.com/"/>
-  <updated>2012-09-21T16:41:57+08:00</updated>
+  <updated>2012-09-21T16:48:07+08:00</updated>
   <id>http://frankyxhl.github.com/</id>
   <author>
     <name><![CDATA[Frank_Xu]]></name>
@@ -12,5 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[序]]></title>
+    <link href="http://frankyxhl.github.com/blog/2012/09/21/new-post/"/>
+    <updated>2012-09-21T16:43:00+08:00</updated>
+    <id>http://frankyxhl.github.com/blog/2012/09/21/new-post</id>
+    <content type="html"><![CDATA[<h1>这是 H1</h1>
+
+<h2>这是 H2</h2>
+
+<h6>这是 H6</h6>
+]]></content>
+  </entry>
   
 </feed>
