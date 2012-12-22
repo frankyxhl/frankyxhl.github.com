@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: emacs | Frank_Xu的学习笔记]]></title>
+  <title><![CDATA[Category: Emacs | Frank_Xu的学习笔记]]></title>
   <link href="http://frankyxhl.github.com/blog/categories/emacs/atom.xml" rel="self"/>
   <link href="http://frankyxhl.github.com/"/>
-  <updated>2012-10-29T01:39:52+08:00</updated>
+  <updated>2012-12-23T06:50:03+08:00</updated>
   <id>http://frankyxhl.github.com/</id>
   <author>
     <name><![CDATA[Frank_Xu]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SLIME学习笔记]]></title>
+    <link href="http://frankyxhl.github.com/blog/2012/12/23/sbclnote/"/>
+    <updated>2012-12-23T05:26:00+08:00</updated>
+    <id>http://frankyxhl.github.com/blog/2012/12/23/sbclnote</id>
+    <content type="html"><![CDATA[<p>参考了SLIME官网的<a href="http://common-lisp.net/project/movies/movies/slime.mov">视频</a>做的中文笔记,怕自己忘记.</p>
+
+<ul>
+<li>,按下逗号会进入命令模式，输入help显示当前所有的命令</li>
+<li>C-c C-d d 显示Symbol的信息</li>
+<li>C-c C-d h 用slime-hyperspec-lookup 去lispword网页版显示信息</li>
+<li>C-M-x 执行当前光标所在的function</li>
+<li>C-x C-e 最后执行</li>
+<li>slime-selctor 作者把它绑定到了F12键，友情提示:Mac下的话需要先在偏好设置里关掉全部变量。l返回经常编辑的lisp文件,r返回repl</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[垂直显示Emacs中ido-mode的信息]]></title>
@@ -36,7 +55,7 @@
 以前用的speedbar没有固定位置的功能,因此google一下,得到宝物sr-speedbar:
 <a href="https://github.com/emacsmirror/sr-speedbar/blob/master/sr-speedbar.el">sr-speedbar</a>
 然后在.emacs作如下配置:
-<div><script src='https://gist.github.com/3780388.js?file='></script>
+<div><script src='https://gist.github.com/3780388.js'></script>
 <noscript><pre><code>(require 'sr-speedbar)
 ;;默认显示所有文件
 (custom-set-variables
@@ -54,7 +73,7 @@
 </p>
 
 <p>其中的(kbd "s-s"),在Mac下就是Command + s的意思,博主在mac下的emacs是把左侧的command与option键互换了,command变成了option(也就是meta):
-<div><script src='https://gist.github.com/3780429.js?file='></script>
+<div><script src='https://gist.github.com/3780429.js'></script>
 <noscript><pre><code>(setq mac-option-key-is-command t)
 (setq mac-option-modifier 'super)
 (setq mac-command-key-is-meta t)

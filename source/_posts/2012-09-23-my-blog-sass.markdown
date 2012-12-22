@@ -3,7 +3,7 @@ layout: post
 title: "我的博客主题"
 date: 2012-09-23 16:50
 comments: true
-categories: [octopress]
+categories: [Octopress]
 ---
 
 

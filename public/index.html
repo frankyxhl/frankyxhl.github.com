@@ -9,7 +9,10 @@
   <meta name="author" content="Frank_Xu">
 
   
-  <meta name="description" content="众所周知的原因,国内用Google搜索出来的结果,点击后经常无法跳转.有一个办法便是把所有的google地址默认全加上https.设定的办法是在Chrome地址输入chrome://net-internals/#hsts,然后在Add Domain中依次添加www.google.com,www. &hellip;">
+  <meta name="description" content="参考了SLIME官网的视频做的中文笔记,怕自己忘记. ,按下逗号会进入命令模式，输入help显示当前所有的命令
+C-c C-d d 显示Symbol的信息
+C-c C-d h 用slime-hyperspec-lookup 去lispword网页版显示信息
+C-M-x &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +67,54 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/23/sbclnote/">SLIME学习笔记</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-23T05:26:00+08:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2012</time>
+        
+         | <a href="/blog/2012/12/23/sbclnote/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>参考了SLIME官网的<a href="http://common-lisp.net/project/movies/movies/slime.mov">视频</a>做的中文笔记,怕自己忘记.</p>
+
+<ul>
+<li>,按下逗号会进入命令模式，输入help显示当前所有的命令</li>
+<li>C-c C-d d 显示Symbol的信息</li>
+<li>C-c C-d h 用slime-hyperspec-lookup 去lispword网页版显示信息</li>
+<li>C-M-x 执行当前光标所在的function</li>
+<li>C-x C-e 最后执行</li>
+<li>slime-selctor 作者把它绑定到了F12键，友情提示:Mac下的话需要先在偏好设置里关掉全部变量。l返回经常编辑的lisp文件,r返回repl</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -181,7 +232,7 @@
 <a href="https://github.com/emacsmirror/sr-speedbar/blob/master/sr-speedbar.el">sr-speedbar</a>
 然后在.emacs作如下配置:</p>
 
-<div><script src='https://gist.github.com/3780388.js?file='></script>
+<div><script src='https://gist.github.com/3780388.js'></script>
 <noscript><pre><code>(require 'sr-speedbar)
 ;;默认显示所有文件
 (custom-set-variables
@@ -200,7 +251,7 @@
 
 <p>其中的(kbd &#8220;s-s&#8221;),在Mac下就是Command + s的意思,博主在mac下的emacs是把左侧的command与option键互换了,command变成了option(也就是meta):</p>
 
-<div><script src='https://gist.github.com/3780429.js?file='></script>
+<div><script src='https://gist.github.com/3780429.js'></script>
 <noscript><pre><code>(setq mac-option-key-is-command t)
 (setq mac-option-modifier 'super)
 (setq mac-command-key-is-meta t)
@@ -247,7 +298,7 @@
 
   <div class="entry-content"><p>下午配置了新博客的主题,这里贴上我的SCSS,在octopress目录里的/sass/custom/_style.scss</p>
 
-<div><script src='https://gist.github.com/3769394.js?file='></script>
+<div><script src='https://gist.github.com/3769394.js'></script>
 <noscript><pre><code>// This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 html{
@@ -352,6 +403,10 @@ body &gt; nav {
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/12/23/sbclnote/">SLIME学习笔记</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/10/29/chrome-set-hsts/">在Chrome下指定域名加上https</a>
       </li>
     
@@ -365,10 +420,6 @@ body &gt; nav {
     
       <li class="post">
         <a href="/blog/2012/09/23/my-blog-sass/">我的博客主题</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/21/hello-github/">序</a>
       </li>
     
   </ul>

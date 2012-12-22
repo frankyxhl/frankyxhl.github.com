@@ -1,0 +1,16 @@
+---
+layout: post
+title: "SLIME学习笔记"
+date: 2012-12-23 05:26
+comments: true
+categories: ['Common Lisp','Emacs']
+---
+
+参考了SLIME官网的[视频](http://common-lisp.net/project/movies/movies/slime.mov)做的中文笔记,怕自己忘记.
+
+* ,按下逗号会进入命令模式，输入help显示当前所有的命令
+* C-c C-d d 显示Symbol的信息
+* C-c C-d h 用slime-hyperspec-lookup 去lispword网页版显示信息
+* C-M-x 执行当前光标所在的function
+* C-x C-e 最后执行
+* slime-selctor 作者把它绑定到了F12键，友情提示:Mac下的话需要先在偏好设置里关掉全部变量。l返回经常编辑的lisp文件,r返回repl

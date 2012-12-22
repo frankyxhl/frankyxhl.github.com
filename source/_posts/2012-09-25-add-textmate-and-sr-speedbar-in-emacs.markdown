@@ -3,7 +3,7 @@ layout: post
 title: "在Emacs中增加sr-speedbar.el与textmate.el"
 date: 2012-09-25 14:51
 comments: true
-categories: [emacs,rails]
+categories: [Emacs,Rails]
 ---
 
 博主最近在学习Rails,所以想把Emacs下的开发环境整合一下,感觉Rails下的开发与平时在Emacs下的开发习惯还是有些区别的,因为Rails大部分时间是在配置文件,然后生成代码,故需要在多个文件间经常来回切换.这次先加了sr-speedbar与textmate.
