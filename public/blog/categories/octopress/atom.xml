@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | Frank_Xu的学习笔记]]></title>
+  <link href="http://frankyxhl.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://frankyxhl.github.com/"/>
+  <updated>2012-10-29T01:39:52+08:00</updated>
+  <id>http://frankyxhl.github.com/</id>
+  <author>
+    <name><![CDATA[Frank_Xu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[我的博客主题]]></title>
+    <link href="http://frankyxhl.github.com/blog/2012/09/23/my-blog-sass/"/>
+    <updated>2012-09-23T16:50:00+08:00</updated>
+    <id>http://frankyxhl.github.com/blog/2012/09/23/my-blog-sass</id>
+    <content type="html"><![CDATA[<p>下午配置了新博客的主题,这里贴上我的SCSS,在octopress目录里的/sass/custom/_style.scss
+<div><script src='https://gist.github.com/3769394.js?file='></script>
+<noscript><pre><code>// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+html{
+		background: url('/images/bg.png') repeat center top; 
+}
+
+body &gt; header{
+		background-color: transparent;
+}
+
+body &gt; header h1 a{
+		text-shadow: #999 0px 1px 0px, #888 0px 2px 0px, #777 0px 3px 0px, #666 0px 4px 0px, #555 0px 5px 0px, #444 0px 6px 0px, #333 0px 7px 0px, #001135 0px 8px 7px;
+}
+
+body &gt; div { 
+		background-color: transparent; 
+}
+
+body &gt; div &gt; div { 
+		background-color: transparent; 
+}
+
+body.sidebar-footer aside.sidebar { 
+		background-color:transparent;
+}
+
+body &gt; footer {
+		background-image: none;		
+		background-color: transparent;
+}
+
+body &gt; nav {
+		background-color: transparent;
+		background-image: none;
+		border-top-width: 0;
+		border-bottom-width: 0;		
+}</code></pre></noscript></div>
+
+以后博客内容多了,准备再改下首页的显示方法.</p>
+]]></content>
+  </entry>
+  
+</feed>

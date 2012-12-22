@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: emacs | Frank_Xu的学习笔记]]></title>
+  <link href="http://frankyxhl.github.com/blog/categories/emacs/atom.xml" rel="self"/>
+  <link href="http://frankyxhl.github.com/"/>
+  <updated>2012-10-29T01:39:52+08:00</updated>
+  <id>http://frankyxhl.github.com/</id>
+  <author>
+    <name><![CDATA[Frank_Xu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[垂直显示Emacs中ido-mode的信息]]></title>
+    <link href="http://frankyxhl.github.com/blog/2012/10/08/show-message-verticle-in-ido-mode/"/>
+    <updated>2012-10-08T01:28:00+08:00</updated>
+    <id>http://frankyxhl.github.com/blog/2012/10/08/show-message-verticle-in-ido-mode</id>
+    <content type="html"><![CDATA[<p>之前用了textmate.el甚是舒服,但是有个问题就是ido-mode显示信息的时候是横向显示的,看起来颇为不便.Google了一下解决方案,果然有现成的方法:
+<a href="http://emacswiki.org/emacs/InteractivelyDoThings#toc20">Display Completions Vertically</a></p>
+
+<p>加入到配置文件即可!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在Emacs中增加sr-speedbar.el与textmate.el]]></title>
+    <link href="http://frankyxhl.github.com/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs/"/>
+    <updated>2012-09-25T14:51:00+08:00</updated>
+    <id>http://frankyxhl.github.com/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs</id>
+    <content type="html"><![CDATA[<p>博主最近在学习Rails,所以想把Emacs下的开发环境整合一下,感觉Rails下的开发与平时在Emacs下的开发习惯还是有些区别的,因为Rails大部分时间是在配置文件,然后生成代码,故需要在多个文件间经常来回切换.这次先加了sr-speedbar与textmate.</p>
+
+<p>首先就是左侧加上文件目录:
+以前用的speedbar没有固定位置的功能,因此google一下,得到宝物sr-speedbar:
+<a href="https://github.com/emacsmirror/sr-speedbar/blob/master/sr-speedbar.el">sr-speedbar</a>
+然后在.emacs作如下配置:
+<div><script src='https://gist.github.com/3780388.js?file='></script>
+<noscript><pre><code>(require 'sr-speedbar)
+;;默认显示所有文件
+(custom-set-variables
+ '(speedbar-show-unknown-files t)
+)
+;;sr-speedbar-right-side 把speedbar放在左侧位置
+;;sr-speedbar-skip-other-window-p 多窗口切换时跳过speedbar窗口
+;;sr-speedbar-max-width与sr-speedbar-width-x 设置宽度
+(custom-set-variables '(sr-speedbar-right-side nil) '(sr-speedbar-skip-other-window-p t) '(sr-speedbar-max-width 20) '(sr-speedbar-width-x 10))
+;; 绑定快捷键
+(global-set-key (kbd &quot;s-s&quot;) 'sr-speedbar-toggle)
+(global-set-key (kbd &quot;s-r&quot;) 'sr-speedbar-refresh-toggle)
+;; 打开
+(sr-speedbar-open)</code></pre></noscript></div>
+</p>
+
+<p>其中的(kbd "s-s"),在Mac下就是Command + s的意思,博主在mac下的emacs是把左侧的command与option键互换了,command变成了option(也就是meta):
+<div><script src='https://gist.github.com/3780429.js?file='></script>
+<noscript><pre><code>(setq mac-option-key-is-command t)
+(setq mac-option-modifier 'super)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)</code></pre></noscript></div>
+</p>
+
+<p>textmate.el就是引用了textmate的一些方法,具体可以参考这里<a href="https://github.com/defunkt/textmate.el">textmate.el</a>,这里就不再赘述了.</p>
+]]></content>
+  </entry>
+  
+</feed>
