@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Chrome | Frank_Xu的学习笔记]]></title>
+  <link href="http://frankyxhl.github.com/blog/categories/chrome/atom.xml" rel="self"/>
+  <link href="http://frankyxhl.github.com/"/>
+  <updated>2012-12-29T20:19:36+08:00</updated>
+  <id>http://frankyxhl.github.com/</id>
+  <author>
+    <name><![CDATA[Frank_Xu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[在Chrome下指定域名加上https]]></title>
+    <link href="http://frankyxhl.github.com/blog/2012/10/29/chrome-set-hsts/"/>
+    <updated>2012-10-29T01:26:00+08:00</updated>
+    <id>http://frankyxhl.github.com/blog/2012/10/29/chrome-set-hsts</id>
+    <content type="html"><![CDATA[<p>众所周知的原因,国内用Google搜索出来的结果,点击后经常无法跳转.有一个办法便是把所有的google地址默认全加上https.设定的办法是在Chrome地址输入chrome://net-internals/#hsts,然后在Add Domain中依次添加www.google.com,www.google.com.hk,并在Include subdomains打勾.大功告成!</p>
+]]></content>
+  </entry>
+  
+</feed>

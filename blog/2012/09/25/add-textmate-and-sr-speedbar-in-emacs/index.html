@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Frank_Xu的学习笔记</title>
+  <title>在Emacs中增加sr-speedbar.el与textmate.el - Frank_Xu的学习笔记</title>
   <meta name="author" content="Frank_Xu">
 
   
-  <meta name="description" content="参考了SLIME官网的视频做的中文笔记,怕自己忘记. ,按下逗号会进入命令模式，输入help显示当前所有的命令
-C-c C-d d 显示Symbol的信息
-C-c C-d h 用slime-hyperspec-lookup 去lispword网页版显示信息
-C-M-x &hellip;">
+  <meta name="description" content="博主最近在学习Rails,所以想把Emacs下的开发环境整合一下,感觉Rails下的开发与平时在Emacs下的开发习惯还是有些区别的,因为Rails大部分时间是在配置文件,然后生成代码,故需要在多个文件间经常来回切换.这次先加了sr-speedbar与textmate. 首先就是左侧加上文件目录 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@ C-M-x &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://frankyxhl.github.com/">
+  <link rel="canonical" href="http://frankyxhl.github.com/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -65,142 +62,12 @@ C-M-x &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/12/23/sbclnote/">SLIME学习笔记</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-23T05:26:00+08:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2012</time>
-        
-         | <a href="/blog/2012/12/23/sbclnote/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>参考了SLIME官网的<a href="http://common-lisp.net/project/movies/movies/slime.mov">视频</a>做的中文笔记,怕自己忘记.</p>
-
-<ul>
-<li>,按下逗号会进入命令模式，输入help显示当前所有的命令</li>
-<li>C-c C-d d 显示Symbol的信息</li>
-<li>C-c C-d h 用slime-hyperspec-lookup 去lispword网页版显示信息</li>
-<li>C-M-x 执行当前光标所在的function</li>
-<li>C-x C-e 最后执行</li>
-<li>slime-selctor 作者把它绑定到了F12键，友情提示:Mac下的话需要先在偏好设置里关掉全部变量。l返回经常编辑的lisp文件,r返回repl</li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/29/chrome-set-hsts/">在Chrome下指定域名加上https</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-29T01:26:00+08:00" pubdate data-updated="true">Oct 29<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/10/29/chrome-set-hsts/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>众所周知的原因,国内用Google搜索出来的结果,点击后经常无法跳转.有一个办法便是把所有的google地址默认全加上https.设定的办法是在Chrome地址输入chrome://net-internals/#hsts,然后在Add Domain中依次添加www.google.com,www.google.com.hk,并在Include subdomains打勾.大功告成!</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/08/show-message-verticle-in-ido-mode/">垂直显示Emacs中ido-mode的信息</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-08T01:28:00+08:00" pubdate data-updated="true">Oct 8<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/10/08/show-message-verticle-in-ido-mode/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>之前用了textmate.el甚是舒服,但是有个问题就是ido-mode显示信息的时候是横向显示的,看起来颇为不便.Google了一下解决方案,果然有现成的方法:
-<a href="http://emacswiki.org/emacs/InteractivelyDoThings#toc20">Display Completions Vertically</a></p>
-
-<p>加入到配置文件即可!</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs/">在Emacs中增加sr-speedbar.el与textmate.el</a></h1>
+      <h1 class="entry-title">在Emacs中增加sr-speedbar.el与textmate.el</h1>
     
     
       <p class="meta">
@@ -218,14 +85,14 @@ C-M-x &hellip;">
 
 <time datetime="2012-09-25T14:51:00+08:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time>
         
-         | <a href="/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs/#disqus_thread">Comments</a>
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>博主最近在学习Rails,所以想把Emacs下的开发环境整合一下,感觉Rails下的开发与平时在Emacs下的开发习惯还是有些区别的,因为Rails大部分时间是在配置文件,然后生成代码,故需要在多个文件间经常来回切换.这次先加了sr-speedbar与textmate.</p>
+<div class="entry-content"><p>博主最近在学习Rails,所以想把Emacs下的开发环境整合一下,感觉Rails下的开发与平时在Emacs下的开发习惯还是有些区别的,因为Rails大部分时间是在配置文件,然后生成代码,故需要在多个文件间经常来回切换.这次先加了sr-speedbar与textmate.</p>
 
 <p>首先就是左侧加上文件目录:
 以前用的speedbar没有固定位置的功能,因此google一下,得到宝物sr-speedbar:
@@ -263,102 +130,16 @@ C-M-x &hellip;">
 
 <p>textmate.el就是引用了textmate的一些方法,具体可以参考这里<a href="https://github.com/defunkt/textmate.el">textmate.el</a>,这里就不再赘述了.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/09/23/my-blog-sass/">我的博客主题</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Frank_Xu</span></span>
 
-<time datetime="2012-09-23T16:50:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
-        
-         | <a href="/blog/2012/09/23/my-blog-sass/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>下午配置了新博客的主题,这里贴上我的SCSS,在octopress目录里的/sass/custom/_style.scss</p>
-
-<div><script src='https://gist.github.com/3769394.js'></script>
-<noscript><pre><code>// This File is imported last, and will override other styles in the cascade
-// Add styles here to make changes without digging in too much
-html{
-        background: url('/images/bg.png') repeat center top; 
-}
-
-body &gt; header{
-        background-color: transparent;
-}
-
-body &gt; header h1 a{
-        text-shadow: #999 0px 1px 0px, #888 0px 2px 0px, #777 0px 3px 0px, #666 0px 4px 0px, #555 0px 5px 0px, #444 0px 6px 0px, #333 0px 7px 0px, #001135 0px 8px 7px;
-}
-
-body &gt; div { 
-        background-color: transparent; 
-}
-
-body &gt; div &gt; div { 
-        background-color: transparent; 
-}
-
-body.sidebar-footer aside.sidebar { 
-        background-color:transparent;
-}
-
-body &gt; footer {
-        background-image: none;     
-        background-color: transparent;
-}
-
-body &gt; nav {
-        background-color: transparent;
-        background-image: none;
-        border-top-width: 0;
-        border-bottom-width: 0;     
-}</code></pre></noscript></div>
-
-
-<p>以后博客内容多了,准备再改下首页的显示方法.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/09/21/hello-github/">序</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -370,35 +151,46 @@ body &gt; nav {
   
 
 
-<time datetime="2012-09-21T19:22:00+08:00" pubdate data-updated="true">Sep 21<span>st</span>, 2012</time>
-        
-         | <a href="/blog/2012/09/21/hello-github/#disqus_thread">Comments</a>
-        
-      </p>
+<time datetime="2012-09-25T14:51:00+08:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/emacs/'>Emacs</a>, <a class='category' href='/blog/categories/rails/'>Rails</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>之前自己VPS上的Wordpress突然挂了,数据全丟了.</p>
-
-<p>如今流行github上写博客,就在这里安家吧.</p>
-
-<p>是为序.</p>
-
-<p>Hello,Github!</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://frankyxhl.github.com/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs/" data-via="franky_xhl" data-counturl="http://frankyxhl.github.com/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/09/23/my-blog-sass/" title="Previous Post: 我的博客主题">&laquo; 我的博客主题</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/10/08/show-message-verticle-in-ido-mode/" title="Next Post: 垂直显示Emacs中ido-mode的信息">垂直显示Emacs中ido-mode的信息 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -431,7 +223,7 @@ body &gt; nav {
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/frankyxhl">@frankyxhl</a> on GitHub
@@ -461,7 +253,7 @@ body &gt; nav {
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -478,6 +270,7 @@ body &gt; nav {
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -492,7 +285,10 @@ body &gt; nav {
       var disqus_shortname = 'frankyxhlgithub';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://frankyxhl.github.com/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs/';
+        var disqus_url = 'http://frankyxhl.github.com/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

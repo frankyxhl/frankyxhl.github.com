@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Common Lisp | Frank_Xu的学习笔记]]></title>
+  <link href="http://frankyxhl.github.com/blog/categories/common-lisp/atom.xml" rel="self"/>
+  <link href="http://frankyxhl.github.com/"/>
+  <updated>2012-12-29T20:19:36+08:00</updated>
+  <id>http://frankyxhl.github.com/</id>
+  <author>
+    <name><![CDATA[Frank_Xu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[SLIME学习笔记]]></title>
+    <link href="http://frankyxhl.github.com/blog/2012/12/23/sbclnote/"/>
+    <updated>2012-12-23T05:26:00+08:00</updated>
+    <id>http://frankyxhl.github.com/blog/2012/12/23/sbclnote</id>
+    <content type="html"><![CDATA[<p>参考了SLIME官网的<a href="http://common-lisp.net/project/movies/movies/slime.mov">视频</a>做的中文笔记,怕自己忘记.</p>
+
+<ul>
+<li>,按下逗号会进入命令模式，输入help显示当前所有的命令</li>
+<li>C-c C-d d 显示Symbol的信息</li>
+<li>C-c C-d h 用slime-hyperspec-lookup 去lispword网页版显示信息</li>
+<li>C-M-x 执行当前光标所在的function</li>
+<li>C-x C-e 最后执行</li>
+<li>slime-selctor 作者把它绑定到了F12键，友情提示:Mac下的话需要先在偏好设置里关掉全部变量。l返回经常编辑的lisp文件,r返回repl</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
