@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: css | Frank_Xu的学习笔记]]></title>
+  <link href="http://frankyxhl.github.com/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://frankyxhl.github.com/"/>
+  <updated>2013-01-12T10:50:55+08:00</updated>
+  <id>http://frankyxhl.github.com/</id>
+  <author>
+    <name><![CDATA[Frank_Xu]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[HTML背景全兼容]]></title>
+    <link href="http://frankyxhl.github.com/blog/2013/01/12/html-fullpage/"/>
+    <updated>2013-01-12T10:49:00+08:00</updated>
+    <id>http://frankyxhl.github.com/blog/2013/01/12/html-fullpage</id>
+    <content type="html"><![CDATA[<p>这里介绍的方法不错，可以全部兼容各种浏览器
+<a href="http://css-tricks.com/perfect-full-page-background-image/">链接</a></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Emacs | Frank_Xu的学习笔记]]></title>
   <link href="http://frankyxhl.github.com/blog/categories/emacs/atom.xml" rel="self"/>
   <link href="http://frankyxhl.github.com/"/>
-  <updated>2012-12-29T20:19:36+08:00</updated>
+  <updated>2013-01-12T10:50:55+08:00</updated>
   <id>http://frankyxhl.github.com/</id>
   <author>
     <name><![CDATA[Frank_Xu]]></name>
@@ -18,7 +18,7 @@
     <link href="http://frankyxhl.github.com/blog/2012/12/23/sbclnote/"/>
     <updated>2012-12-23T05:26:00+08:00</updated>
     <id>http://frankyxhl.github.com/blog/2012/12/23/sbclnote</id>
-    <content type="html"><![CDATA[<p>参考了SLIME官网的<a href="http://common-lisp.net/project/movies/movies/slime.mov">视频</a>做的中文笔记,怕自己忘记.</p>
+    <content type="html"><![CDATA[<p>参考了SLIME官网的<a href="http://common-lisp.net/project/movies/movies/slime.mov">视频</a>以及黄涧石的slide做的中文笔记,怕自己忘记.</p>
 
 <ul>
 <li>,按下逗号会进入命令模式，输入help显示当前所有的命令</li>
@@ -27,6 +27,10 @@
 <li>C-M-x 执行当前光标所在的function</li>
 <li>C-x C-e 最后执行</li>
 <li>slime-selctor 作者把它绑定到了F12键，友情提示:Mac下的话需要先在偏好设置里关掉全部变量。l返回经常编辑的lisp文件,r返回repl</li>
+<li>M-. 跳转到函数定义</li>
+<li><p>C-c C-d C-z 查找函数名</p></li>
+<li><p>(setf sb-impl::<em>default-external-format</em> :UTF-8)</p></li>
+<li>M-p 或者C-方向键 来找历史命令</li>
 </ul>
 
 ]]></content>

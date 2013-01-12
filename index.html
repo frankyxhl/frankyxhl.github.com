@@ -9,10 +9,9 @@
   <meta name="author" content="Frank_Xu">
 
   
-  <meta name="description" content="参考了SLIME官网的视频做的中文笔记,怕自己忘记. ,按下逗号会进入命令模式，输入help显示当前所有的命令
-C-c C-d d 显示Symbol的信息
-C-c C-d h 用slime-hyperspec-lookup 去lispword网页版显示信息
-C-M-x &hellip;">
+  <meta name="description" content="这里介绍的方法不错，可以全部兼容各种浏览器
+链接
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +72,128 @@ C-M-x &hellip;">
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/01/12/html-fullpage/">HTML背景全兼容</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-12T10:49:00+08:00" pubdate data-updated="true">Jan 12<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/01/12/html-fullpage/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这里介绍的方法不错，可以全部兼容各种浏览器
+<a href="http://css-tricks.com/perfect-full-page-background-image/">链接</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/11/rails-note/">笔记</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-11T11:23:00+08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/01/11/rails-note/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul>
+<li>重定向404 在routes.rb写入  match &#8216;*path&#8217; => redirect(&#8216;/&#8217;)</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/07/common-lisp-note/">&#8216;Common-lisp-note&#8217;</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-07T01:51:00+08:00" pubdate data-updated="true">Jan 7<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/01/07/common-lisp-note/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.douban.com/note/178148141/">Practical Common Lisp 个人翻译版欢乐版</a>
+<a href="http://acl.readthedocs.org/en/latest/">ANSI Common Lisp 中文翻译版</a>
+<a href="http://github.com/acl-translation/acl-chinese">github地址</a></p>
+
+<p><a href="http://sicp.readthedocs.org/en/latest/">SICP习题解答集</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2012/12/23/sbclnote/">SLIME学习笔记</a></h1>
     
     
@@ -98,7 +219,7 @@ C-M-x &hellip;">
   </header>
 
 
-  <div class="entry-content"><p>参考了SLIME官网的<a href="http://common-lisp.net/project/movies/movies/slime.mov">视频</a>做的中文笔记,怕自己忘记.</p>
+  <div class="entry-content"><p>参考了SLIME官网的<a href="http://common-lisp.net/project/movies/movies/slime.mov">视频</a>以及黄涧石的slide做的中文笔记,怕自己忘记.</p>
 
 <ul>
 <li>,按下逗号会进入命令模式，输入help显示当前所有的命令</li>
@@ -107,6 +228,10 @@ C-M-x &hellip;">
 <li>C-M-x 执行当前光标所在的function</li>
 <li>C-x C-e 最后执行</li>
 <li>slime-selctor 作者把它绑定到了F12键，友情提示:Mac下的话需要先在偏好设置里关掉全部变量。l返回经常编辑的lisp文件,r返回repl</li>
+<li>M-. 跳转到函数定义</li>
+<li><p>C-c C-d C-z 查找函数名</p></li>
+<li><p>(setf sb-impl::<em>default-external-format</em> :UTF-8)</p></li>
+<li>M-p 或者C-方向键 来找历史命令</li>
 </ul>
 
 </div>
@@ -406,23 +531,23 @@ body &gt; nav {
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/01/12/html-fullpage/">HTML背景全兼容</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/11/rails-note/">笔记</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/07/common-lisp-note/">&#8216;common-lisp-note&#8217;</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/12/23/sbclnote/">SLIME学习笔记</a>
       </li>
     
       <li class="post">
         <a href="/blog/2012/10/29/chrome-set-hsts/">在Chrome下指定域名加上https</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/10/08/show-message-verticle-in-ido-mode/">垂直显示Emacs中ido-mode的信息</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/25/add-textmate-and-sr-speedbar-in-emacs/">在Emacs中增加sr-speedbar.el与textmate.el</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/23/my-blog-sass/">我的博客主题</a>
       </li>
     
   </ul>
@@ -481,7 +606,7 @@ body &gt; nav {
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Frank_Xu -
+  Copyright &copy; 2013 - Frank_Xu -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
